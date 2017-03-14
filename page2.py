@@ -25,8 +25,8 @@ class World:
         #----- scanning the area -----#
         for i in range(h):
             for j in range(w):
-                i = i - h//2
-                j = j - w//2
+                i = y + i - h//2
+                j = x + j - w//2
                 address = str(j) + ',' + str(i)
                 #
                 # we should not update the position and the cells_
