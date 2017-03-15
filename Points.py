@@ -25,6 +25,6 @@ class Points:
         #----- code -----#
         if not self.is_in or self.force:
             self.memo[ self.address ] = z
-        else: print('Cant override')
+        #else: print('Cant override')
         #----- trash -----#
         #print(self.call(x,y))
