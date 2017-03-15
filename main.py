@@ -3,11 +3,16 @@
 #
 
 from page1 import *
-from page2 import *
+from page3 import *
 
 world = World()
+android = Android('2b')
+world.update(android)
 
-android = {}
-Android.factory(android, 'b2', 's90')
+def update(direction = (0,0)):
+    android.walk(world, direction)
+    world.update(android)
 
-android['b2'].update((0,1),world)
+
+while True:
+    update(input("I'm going... "))

@@ -24,8 +24,8 @@ class World:
         
         #----- scanning the area -----#
         for i in range(h):
+            i = y + i - h//2
             for j in range(w):
-                i = y + i - h//2
                 j = x + j - w//2
                 address = str(j) + ',' + str(i)
                 #
